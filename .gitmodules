@@ -1,0 +1,3 @@
+[submodule "k8s"]
+	path = k8s
+	url = https://github.com/gardener/kubify.git
