@@ -7,6 +7,14 @@ aws_availability_zone="b"
 cluster_name="<your cluster name>"
 cluster_type="poc"
 
+versions = {
+  #
+  # for some strange reason etcd with higher version
+  # cannot scale !!on AWS!! and the cluster will not be
+  # functional after setup is done
+  etcd_version       = "v3.1.8"
+}
+
 # DNS
 dns = {
   dns_type = "route53"

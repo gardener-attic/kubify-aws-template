@@ -1,5 +1,6 @@
 .terraform/
 terraform/
+test.auto.tfvars
 gen/
 tmp/
 *.sw[pq]
