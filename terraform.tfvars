@@ -43,6 +43,20 @@ addons = {
   kube-lego={
     email = "your.name@acme.com"
   }
+  dex = {
+    lists = {
+      connectors = [
+        {
+          type = "github"
+          id = "github"
+          name = "GitHub"
+          client_id = "<client id of your github OAuth App>"
+          client_secret = "<your client secret>"
+          orgs = "[ { \"name\": \"gardener\" } ]"
+        }
+      ]
+    }
+  }
 }
 
 #
