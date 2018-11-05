@@ -93,5 +93,11 @@ EOF
   }
 ]
 
+# Event ttl of kube apiserver events
+event_ttl = "168h0m0s"
+
+# Use static pod etcd cluster setup
+selfhosted_etcd = "false"
+
 
 
